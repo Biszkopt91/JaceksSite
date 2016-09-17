@@ -1,12 +1,22 @@
 export const resources = [
     {
-        id: 'home',
+        id: 'intro',
         label: "Home",
-        scrollTo: ".section.top"
+        scrollTo: "intro"
     },
     {
-        id: 'about-us',
-        label: "O nas",
-        scrollTo: "footer"
-    }
+        id: 'services',
+        label: "Usługi",
+        scrollTo: "services"
+    },
+    {
+        id: 'realizations',
+        label: 'Realizacje',
+        scrollTo: "realizations"
+    },
+    {
+        id: 'contact',
+        label: "Kontakt",
+        scrollTo: "contact"
+    },
 ];

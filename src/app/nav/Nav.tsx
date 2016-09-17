@@ -1,14 +1,14 @@
 import * as React from 'react';
-import * as ReactDom from 'react-dom';
 import { resources } from './resources'
-import './nav.scss';
 
 
 interface INavProps {
     onMenuItemClick: (scrollToElement) => void;
 };
 
-interface INavState {};
+interface INavState {
+    isOpen: boolean
+};
 
 export class Nav extends React.Component<INavProps, INavState> {
     constructor(props, state){
@@ -23,7 +23,7 @@ export class Nav extends React.Component<INavProps, INavState> {
                         key={ item.id }
                         className="nav-item"
                         onClick={() => { this.props.onMenuItemClick(item.scrollTo) }}>
-                        { item.label }
+                        <span className="nav-item-title">{ item.label }</span>
                     </button>
                 )
             })
@@ -31,9 +31,11 @@ export class Nav extends React.Component<INavProps, INavState> {
     }
 
     render() {
-        console.log(this.generateLinks());
         return (
             <nav className="nav">
+                <div className="nav-toggle">
+
+                </div>
                 <div className="nav-items">
                     { this.generateLinks() }
 

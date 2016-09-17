@@ -3,9 +3,12 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {Header} from './header';
-import {Title} from './title';
+import {Section} from './sections/Section';
 import {Footer} from './footer';
+import {resources} from './resources'
 
+
+const sectionsRes = resources.sections;
 const styles = {
   container: {
     display: 'flex',
@@ -27,19 +30,48 @@ export class Main extends React.Component<IMainProps, IMainState> {
 
 
   handleNavItemClick = (scrollToElement) => {
-    console.log(ReactDOM.findDOMNode(this.refs[scrollToElement]).getBoundingClientRect().top);
+    console.log(ReactDOM.findDOMNode(this.refs[scrollToElement]).getBoundingClientRect());
     const scrollTop = ReactDOM.findDOMNode(this.refs[scrollToElement]).getBoundingClientRect().top;
-    window.scrollTo(0, scrollTop)
+    window.scrollTo(0, window.scrollY + scrollTop - 50)
   };
 
   render() {
     return (
       <div style={styles.container}>
         <Header onMenuItemClick={ this.handleNavItemClick }/>
-        <main style={styles.main}>
-          <Title/>
+        <div className="content">
+          <Section
+              ref={ sectionsRes.intro.id }
+              id={ sectionsRes.intro.id }
+          >
+            <div></div>
+          </Section>
 
-        </main>
+          <Section
+              id={ sectionsRes.services.id }
+              ref={ sectionsRes.services.id }
+              title={ sectionsRes.services.title }
+          >
+            <div></div>
+
+          </Section>
+          <Section
+              id={ sectionsRes.realizations.id }
+              ref={ sectionsRes.realizations.id }
+              title={ sectionsRes.realizations.title }
+          >
+            <div></div>
+
+          </Section>
+          <Section
+              id={ sectionsRes.contact.id }
+              ref={ sectionsRes.contact.id }
+              title={ sectionsRes.contact.title }
+          >
+            <div></div>
+
+          </Section>
+        </div>
         <Footer ref="footer"/>
       </div>
     );
