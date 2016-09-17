@@ -24,6 +24,10 @@ module.exports = {
         })
       },
       {
+        test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/,
+        loader: "file-loader?name=[name].[ext]"
+      },
+      {
         test: /\.tsx$/,
         exclude: /node_modules/,
         loaders: [

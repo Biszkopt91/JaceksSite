@@ -47,7 +47,8 @@ module.exports = {
           'react-hot',
           'ts'
         ]
-      }, {
+      },
+      {
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/,
         loader: "file-loader?name=[name].[ext]"
       }
