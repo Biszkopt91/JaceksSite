@@ -1,5 +1,6 @@
 .nav{
   position: fixed;
+  z-index: 999;
   top: 0px;
   width: 100%;
   background: black;
@@ -10,8 +11,8 @@
       outline: none;
       color: white;
       height: 50px;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding-left: 20px;
+      padding-right: 20px;
       &:hover{
         color: #999;
         .nav-item-title{

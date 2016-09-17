@@ -41,8 +41,10 @@ export class Main extends React.Component<IMainProps, IMainState> {
         <Header onMenuItemClick={ this.handleNavItemClick }/>
         <div className="content">
           <Section
+              extraClass="intro"
               ref={ sectionsRes.intro.id }
               id={ sectionsRes.intro.id }
+              img="../img/c2.jpg"
           >
             <div></div>
           </Section>

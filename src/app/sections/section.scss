@@ -1,4 +1,16 @@
 .section{
+  overflow: hidden;
   min-height: calc(100vh - 50px);
-  background: gray;
+}
+
+.intro{
+  position: relative;
+  .section-image{
+    position: absolute;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+  }
 }
