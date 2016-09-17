@@ -3,7 +3,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import {Header} from './header';
-import {Section} from './sections/Section';
+import {Section} from './section/Section';
 import {Footer} from './footer';
 import {resources} from './resources'
 
@@ -51,6 +51,7 @@ export class Main extends React.Component<IMainProps, IMainState> {
 
           <Section
               id={ sectionsRes.services.id }
+              icon={ sectionsRes.services.icon }
               ref={ sectionsRes.services.id }
               title={ sectionsRes.services.title }
           >

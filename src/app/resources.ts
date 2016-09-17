@@ -6,7 +6,8 @@ export const resources = {
         },
         services:{
             id: 'services',
-            title: 'Usługi'
+            title: 'Usługi',
+            icon: 'saw'
         },
         realizations:{
             id: 'realizations',

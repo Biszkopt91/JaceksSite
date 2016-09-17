@@ -3,22 +3,22 @@
   z-index: 999;
   top: 0px;
   width: 100%;
-  background: black;
+  background: $cdef;
   .nav-items{
     .nav-item{
       border: none;
       background: transparent;
       outline: none;
-      color: white;
+      color: $clight;
       height: 50px;
       padding-left: 20px;
       padding-right: 20px;
       &:hover{
-        color: #999;
+
         .nav-item-title{
           position: relative;
           &:after{
-            background: #999;
+            background: $clight;
             content:'';
             display: block;
             height: 3px;

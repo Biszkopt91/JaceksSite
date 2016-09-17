@@ -23,12 +23,21 @@ module.exports = {
         ]
       },
       {
-        test: /\.(css|scss)$/,
+        test: /\.(scss)$/,
         loaders: [
           'style',
           'css',
           'sass',
-          'postcss'
+          'resolve-url'
+        ]
+      },
+      {
+        test: /\.(css)$/,
+        loaders: [
+          'style',
+          'css',
+          'sass',
+          'resolve-url'
         ]
       },
       {
@@ -38,6 +47,9 @@ module.exports = {
           'react-hot',
           'ts'
         ]
+      }, {
+        test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9].[0-9].[0-9])?$/,
+        loader: "file-loader?name=[name].[ext]"
       }
     ]
   },
@@ -50,7 +62,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin()
   ],
-  postcss: () => [autoprefixer],
+
   debug: true,
   devtool: 'cheap-module-eval-source-map',
   output: {

@@ -1,6 +1,20 @@
 .section{
   overflow: hidden;
   min-height: calc(100vh - 50px);
+  .section-header{
+    font-size: 45px;
+    text-align: center;
+  }
+  .title{
+    margin: 10px 20px;
+  }
+  .icon{
+    font-size: 35px;
+    color: $cdef;
+    &:before{
+      line-height: 77px;
+    }
+  }
 }
 
 .intro{

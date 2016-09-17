@@ -1,3 +1,58 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("./icons/Flaticon.eot");
+  src: url("./icons/Flaticon.eot?#iefix") format("embedded-opentype"),
+  url("./icons/Flaticon.woff") format("woff"),
+  url("./icons/Flaticon.ttf") format("truetype"),
+  url("./icons/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./icons/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+.fi:before{
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.flaticon-axe:before { content: "\f100"; }
+.flaticon-axe-1:before { content: "\f101"; }
+.flaticon-axe-2:before { content: "\f102"; }
+.flaticon-circular-saw:before { content: "\f103"; }
+.flaticon-hand-holding-up-a-saw:before { content: "\f104"; }
+.flaticon-power-drill:before { content: "\f105"; }
+.flaticon-saw:before { content: "\f106"; }
+.flaticon-tape-measure:before { content: "\f107"; }
+.flaticon-toolbox:before { content: "\f108"; }
+.flaticon-tools:before { content: "\f109"; }
+
+$font-Flaticon-axe: "\f100";
+$font-Flaticon-axe-1: "\f101";
+$font-Flaticon-axe-2: "\f102";
+$font-Flaticon-circular-saw: "\f103";
+$font-Flaticon-hand-holding-up-a-saw: "\f104";
+$font-Flaticon-power-drill: "\f105";
+$font-Flaticon-saw: "\f106";
+$font-Flaticon-tape-measure: "\f107";
+$font-Flaticon-toolbox: "\f108";
+$font-Flaticon-tools: "\f109";
+
 html, body, #root {
   margin: 0;
   height: 100%;
@@ -26,4 +81,5 @@ a {
   margin-top: 50px;
 }
 @import "app/common/common";
+@import 'app/section/section.scss';
 @import "app/nav/nav";

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './section.scss';
+
 
 
 interface ISectionProps {
@@ -8,6 +8,7 @@ interface ISectionProps {
     extraClass?: string;
     children?: Element;
     img?: string;
+    icon?: string;
 };
 
 interface ISectionState {};
@@ -26,9 +27,15 @@ export class Section extends React.Component<ISectionProps, ISectionState> {
                 <div className="container">
                     {this.props.title &&
                     <header className="section-header">
-                        <h2>
-                            { this.props.title }
-                        </h2>
+
+                            {this.props.icon &&
+                                <i className={`icon fi flaticon-${this.props.icon}`}></i>
+                            }
+                            <span className="title">{ this.props.title }</span>
+                            {this.props.icon &&
+                                <i className={`icon fi flaticon-${this.props.icon}`}></i>
+                            }
+
 
                     </header>
                     }
