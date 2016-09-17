@@ -1,5 +1,6 @@
+/*
 import * as React from 'react';
-import {GoogleMapLoader, GoogleMap, Marker} from "react-google-maps";
+//import {GoogleMapLoader, GoogleMap, Marker} from "react-google-maps";
 
 
 
@@ -60,3 +61,4 @@ export default function SimpleMap (props) {
     );
 }
 
+*/

@@ -46,7 +46,9 @@ export class Main extends React.Component<IMainProps, IMainState> {
               id={ sectionsRes.intro.id }
               img="../img/c2.jpg"
           >
-            <div></div>
+            <div className="logo-mask">
+              <img className="logo" src="./img/logo2.png"/>
+            </div>
           </Section>
 
           <Section
@@ -55,7 +57,7 @@ export class Main extends React.Component<IMainProps, IMainState> {
               ref={ sectionsRes.services.id }
               title={ sectionsRes.services.title }
           >
-            <div></div>
+
 
           </Section>
           <Section
