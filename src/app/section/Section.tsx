@@ -8,6 +8,7 @@ interface ISectionProps {
     extraClass?: string;
     children?: Element;
     img?: string;
+    mask?: boolean;
     icon?: string;
 };
 
@@ -21,10 +22,15 @@ export class Section extends React.Component<ISectionProps, ISectionState> {
     render() {
         return (
             <section className={`section ${this.props.extraClass ? this.props.extraClass :''}`}>
+
                 {this.props.img &&
                     <img className="section-image" src={this.props.img}/>
                 }
+                {this.props.mask &&
+                    <div className="section-mask"></div>
+                }
                 <div className="container">
+
                     {this.props.title &&
                     <header className="section-header">
 

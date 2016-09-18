@@ -41,23 +41,32 @@ export class Main extends React.Component<IMainProps, IMainState> {
         <Header onMenuItemClick={ this.handleNavItemClick }/>
         <div className="content">
           <Section
+              mask={true}
               extraClass="intro"
               ref={ sectionsRes.intro.id }
               id={ sectionsRes.intro.id }
               img="../img/c2.jpg"
           >
-            <div className="logo-mask">
-              <img className="logo" src="./img/logo2.png"/>
-            </div>
+            <img className="logo" src="./img/logo2.png"/>
           </Section>
 
           <Section
+              mask={true}
               id={ sectionsRes.services.id }
               icon={ sectionsRes.services.icon }
               ref={ sectionsRes.services.id }
+              img="../img/c1.jpg"
               title={ sectionsRes.services.title }
           >
+            <div className="services-content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
+                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+                pellentesque felis.
+              </p>
 
+            </div>
 
           </Section>
           <Section
