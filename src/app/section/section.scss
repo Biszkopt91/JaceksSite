@@ -1,4 +1,6 @@
 .section{
+  color: white;
+  display: flex;
   overflow: hidden;
   position: relative;
   min-height: calc(100vh - 50px);
@@ -48,7 +50,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.section-main-content{
 
+}
+.section-content{
+  align-self: center;
+}
 .section-image{
   position: absolute;
   z-index: -1;

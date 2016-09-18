@@ -29,7 +29,7 @@ export class Section extends React.Component<ISectionProps, ISectionState> {
                 {this.props.mask &&
                     <div className="section-mask"></div>
                 }
-                <div className="container">
+                <div className="container section-content">
 
                     {this.props.title &&
                     <header className="section-header">
@@ -45,7 +45,7 @@ export class Section extends React.Component<ISectionProps, ISectionState> {
 
                     </header>
                     }
-                    <div className="section-content">
+                    <div className="section-main-content">
                         { this.props.children }
                     </div>
                 </div>
