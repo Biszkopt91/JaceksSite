@@ -45,9 +45,9 @@ export class Main extends React.Component<IMainProps, IMainState> {
               extraClass="intro"
               ref={ sectionsRes.intro.id }
               id={ sectionsRes.intro.id }
-              img="../img/c2.jpg"
+              img="./img/c2.jpg"
           >
-            <img className="logo" src="./img/logo2.png"/>
+            <img className="logo" src="./img/logowhite.png"/>
           </Section>
 
           <Section
@@ -55,7 +55,7 @@ export class Main extends React.Component<IMainProps, IMainState> {
               id={ sectionsRes.services.id }
               icon={ sectionsRes.services.icon }
               ref={ sectionsRes.services.id }
-              img="../img/c1.jpg"
+              img="./img/c1.jpg"
               title={ sectionsRes.services.title }
           >
             <div className="services-content">
