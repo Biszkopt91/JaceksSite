@@ -38,8 +38,7 @@ export class Main extends React.Component<IMainProps, IMainState> {
   render() {
     return (
       <div style={styles.container}>
-        <Header onMenuItemClick={ this.handleNavItemClick }/>
-        <div className="content">
+        <div className="">
           <Section
               mask={true}
               extraClass="intro"
@@ -48,42 +47,6 @@ export class Main extends React.Component<IMainProps, IMainState> {
               img="./img/c2.jpg"
           >
             <img className="logo" src="./img/logowhite.png"/>
-          </Section>
-
-          <Section
-              mask={true}
-              id={ sectionsRes.services.id }
-              icon={ sectionsRes.services.icon }
-              ref={ sectionsRes.services.id }
-              img="./img/c1.jpg"
-              title={ sectionsRes.services.title }
-          >
-            <div className="services-content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
-                Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
-                pellentesque felis.
-              </p>
-
-            </div>
-
-          </Section>
-          <Section
-              id={ sectionsRes.realizations.id }
-              ref={ sectionsRes.realizations.id }
-              title={ sectionsRes.realizations.title }
-          >
-            <div></div>
-
-          </Section>
-          <Section
-              id={ sectionsRes.contact.id }
-              ref={ sectionsRes.contact.id }
-              title={ sectionsRes.contact.title }
-          >
-            <div></div>
-
           </Section>
         </div>
         <Footer ref="footer"/>

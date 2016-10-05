@@ -4,6 +4,9 @@ import * as React from 'react';
 
 const styles = {
   footer: {
+    position: 'fixed',
+    bottom: '0px',
+    width: '100%',
     padding: '0.5rem',
     fontSize: '1rem',
     backgroundColor: '#1f1f1f',
@@ -20,10 +23,7 @@ export class Footer extends React.Component<IFooterProps, IFooterState> {
   render() {
     return (
       <footer className="footer" style={styles.footer}>
-        Build with ♥ by the&nbsp;
-        <a href='https://github.com/orgs/FountainJS/people'>
-          FountainJS team
-        </a>
+        Strona w przebudowie. Jacek Hachulski Pracowania Stolarska kontakt +48 697 328 697
       </footer>
     );
   }
